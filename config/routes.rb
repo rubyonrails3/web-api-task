@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+
+  namespace :api do
+    resources :users, only: :create
+    resources :tweets, only: :create
+    resources :friendships, only: :create do
+      delete :destroy, on: :collection
+    end
+    resources :friends, only: :index
+    get :feeds, controller: :tweets
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
