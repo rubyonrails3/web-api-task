@@ -10,6 +10,10 @@
 	
 	{ "id" : 1, "name": "user name", "api_key": "must save api_key" }
 	
+	Example
+	
+	curl -XPOST -H 'Content-Type: application/json' -d '{"user": {"name": "Ismail", "email": "rubyonrails3@gmail.com", password: "password" }}' example.com/api/users 
+	
 	
 ## Create Tweet
 
