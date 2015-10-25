@@ -31,6 +31,10 @@
 	
 	{ "id": 1, "content": "This is my tweet", "user": {"id": 1, "name": "username", "email": "email address" } }
 	
+	Example
+	
+	curl -XPOST -d '{"tweet": {"content": "This is my tweet"}}' -H 'Content-Type: application/json' -H 'Authorization: Token token=N5gPBXzAAZWUycYZqZu0D1m5yHUV+0KF' example.com/api/tweets
+	
 	
 ## Create friendship
 
