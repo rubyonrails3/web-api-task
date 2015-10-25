@@ -63,6 +63,11 @@
 	
 	Response
 	
+	
+	Example
+	
+	curl -XDELETE -d '{"email": "rubyonrails3@gmail.com"}' -H 'Content-Type: application/json' -H 'Authorization: Token token=N5gPBXzAAZWUycYZqZu0D1m5yHUV+0KF' example.com/api/friendships 
+	
 
 ## Feeds
 	
